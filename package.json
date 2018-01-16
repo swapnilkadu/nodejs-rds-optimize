@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-mysql-rds-optimize",
+  "version": "1.0.0",
+  "description": "Effective databse connection example with and pooling pooling.",
+  "scripts": {
+    "withoutpool": "node withConnection/index.js",
+    "withpool": "node withConnectionPool/index2.js"
+  },
+  "author": "swapnilkadu",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  }
+}
