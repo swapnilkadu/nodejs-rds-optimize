@@ -1,20 +1,19 @@
 "use strict";
-
 var mysql = require("mysql");
+
 var connection;
 
 exports.connect = function (callback) {
 
-  if(connection) {
+  if (connection) {
     console.log("connection reused...");
     callback(connection);
   } else {
-
     var conn = mysql.createConnection({
-      host : "XXX",
+      host: "XXX",
       port: "XXX",
       database: "XXX",
-      user : "XXX",
+      user: "XXX",
       password: "XXX"
     });
 
